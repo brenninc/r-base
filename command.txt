@@ -1,0 +1,6 @@
+These are example runs that work on my machine
+Replace /home/christian/docker/r-base/scripts with the folder you have your scripts in
+This does not need to be in a subdirectory of r-base!
+
+docker run --rm -v /home/christian/docker/r-base/scripts:/scripts brenninc/r-base /scripts/hello_world.R 
+docker run --rm -v /home/christian/docker/r-base/scripts:/scripts brenninc/r-base /scripts/show_params.R --args a=13 b="'test'"t 
